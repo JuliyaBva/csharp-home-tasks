@@ -98,7 +98,6 @@ namespace HomeWork02
             int ch2i = (int)(char)o4; // unboxing to int
             Console.WriteLine(ch2i);
             Console.WriteLine(ch2i.GetType());
-            //
         }
     }
 }
