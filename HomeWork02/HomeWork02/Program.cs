@@ -89,28 +89,6 @@ namespace HomeWork02
             Console.WriteLine(num2);
             Console.WriteLine(num2.GetType());
 
-            // Boxing to boolean and unboxing to byte
-            bool trueFlag = true;
-            bool falseFlag = false;
-
-            // boxing to boolean
-            object o2 = trueFlag;
-            object o3 = falseFlag;
-
-            Console.WriteLine(trueFlag);
-            Console.WriteLine(trueFlag.GetType());
-            Console.WriteLine(falseFlag);
-            Console.WriteLine(falseFlag.GetType());
-
-            // unboxing to byte
-            byte bt1 = Convert.ToByte(o2);
-            byte bt2 = Convert.ToByte(o3);
-
-            Console.WriteLine(bt1);
-            Console.WriteLine(bt1.GetType());
-            Console.WriteLine(bt2);
-            Console.WriteLine(bt2.GetType());
-
             // Boxing to char and unboxing to int
             char ch = 'a';
             object o4 = ch; // boxing to char
