@@ -6,6 +6,7 @@ namespace HomeTask4._2
     {
         static void Main(string[] args)
         {
+            //Display only prime numbers from a given range
             int primeNumber;
             bool isNumberPrime;
             for (primeNumber = 2; primeNumber < 200; primeNumber++)
