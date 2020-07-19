@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Example_with_while
+namespace HomeWork04_Example_with_while
 {
     class Program
     {
@@ -22,7 +22,6 @@ namespace Example_with_while
                     continue;
                 }
             }
-
         }
     }
 }
