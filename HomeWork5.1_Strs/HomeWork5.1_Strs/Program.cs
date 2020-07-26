@@ -14,7 +14,7 @@ namespace HomeWork5._1_Strs
                 for (int j = 0; j < lettersToFind.Length; ++j)
                     if (str[i] == lettersToFind[j])
                         ++count;
-            Console.WriteLine("Count of the requested letters is {0}", count);
+            Console.WriteLine("Count of the /AaEeIiOoYyUu/ letters is {0}", count);
 
             //option2
             Console.WriteLine("Please enter some word: ");
@@ -24,7 +24,7 @@ namespace HomeWork5._1_Strs
                 for (int j = 0; j < lettersToFind.Length; ++j)
                     if (word[i] == lettersToFind[j])
                         ++count2;
-            Console.WriteLine("Count of the requested letters is {0}", count2);
+            Console.WriteLine("Count of the /AaEeIiOoYyUu/ letters is {0}", count2);
             Console.ReadLine();
         }
     }
