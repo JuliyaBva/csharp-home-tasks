@@ -39,7 +39,6 @@ namespace HomeWork6
                     Console.WriteLine("Student {0} got a cup of coffee", person2InStack.Name);
                     Console.WriteLine("Student {0} got a cup of coffee", person3InStack.Name);
                 break;
-
                 case 2:
                     //Queue
                     Queue<Person> personsInQueue = new Queue<Person>();
