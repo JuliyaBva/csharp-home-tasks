@@ -16,6 +16,7 @@ namespace HomeWork6
             {
                 case 1:
                     //Stack
+                    //Note: number of students from which home tasks are expected to be received is 3
                     Stack<Person> personsInStack = new Stack<Person>();
                     Console.WriteLine("Stack was selected");
                     Console.WriteLine("Please enter name of the first student: ");
@@ -41,6 +42,7 @@ namespace HomeWork6
                 break;
                 case 2:
                     //Queue
+                    //Note: number of students from which home tasks are expected to be received is 3
                     Queue<Person> personsInQueue = new Queue<Person>();
                     Console.WriteLine("Queue was selected");
                     Console.WriteLine("Please enter name of the first student: ");
