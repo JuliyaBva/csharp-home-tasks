@@ -56,10 +56,10 @@ namespace HomeWork07
                     {
                         group.GroupName = "Group No.1";
                         string[] students = new string[] { "Ivanov", "Petrov", "Sobolev" };
-                        const int g = 8;
-                        int[] gradesStudent1 = new int[g] { 6, 6, 7, 8, 9, 10, 9, 8 };
-                        int[] gradesStudent2 = new int[g] { 7, 7, 8, 9, 10, 10, 8, 7 };
-                        int[] gradesStudent3 = new int[g] { 8, 8, 9, 10, 7, 9, 10, 8 };
+                        const int g = 9;
+                        int[] gradesStudent1 = new int[g] { 6, 6, 7, 8, 9, 10, 9, 8, 9 };
+                        int[] gradesStudent2 = new int[g] { 7, 7, 8, 9, 10, 10, 8, 7, 8 };
+                        int[] gradesStudent3 = new int[g] { 8, 8, 9, 10, 7, 9, 10, 8, 10 };
                         Console.WriteLine("Please enter command: s - display all students, d - display grades of each student, c - calculte averge grade of each student, q - quit");
                         string command2 = Console.ReadLine();
 
