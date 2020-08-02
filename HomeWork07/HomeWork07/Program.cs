@@ -56,11 +56,11 @@ namespace HomeWork07
                     {
                         group.GroupName = "Group No.1";
                         string[] students = new string[] { "Ivanov", "Petrov", "Sobolev" };
-                        const int g = 9;
-                        int[] gradesStudent1 = new int[g] { 6, 6, 7, 8, 9, 10, 9, 8, 9 };
-                        int[] gradesStudent2 = new int[g] { 7, 7, 8, 9, 10, 10, 8, 7, 8 };
-                        int[] gradesStudent3 = new int[g] { 8, 8, 9, 10, 7, 9, 10, 8, 10 };
-                        Console.WriteLine("Please enter command: s - display all students, d - display grades of each student, c - calculte averge grade of each student, q - quit");
+                        const int g = 7;
+                        int[] gradesStudent1 = new int[g] { 6, 6, 6, 7, 8, 9, 9 };
+                        int[] gradesStudent2 = new int[g] { 8, 8, 7, 8, 9, 10, 9 };
+                        int[] gradesStudent3 = new int[g] { 9, 9, 8, 9, 10, 7, 9 };
+                        Console.WriteLine("Please enter command: s - display all students, d - display grades of each student, c - calculate averge grade of each student, q - quit");
                         string command2 = Console.ReadLine();
 
                         switch (command2)
@@ -68,6 +68,7 @@ namespace HomeWork07
                             case "s":
                                 Console.WriteLine("Students of {0}: ", group.GroupName);
                                 foreach (string i in students)
+
                                 {
                                     Console.WriteLine(i);
                                 }
@@ -79,13 +80,13 @@ namespace HomeWork07
                                 {
                                     Console.WriteLine(i);
                                 }
-                                
+
                                 Console.WriteLine("Grades of student {0}: ", students[1]);
                                 foreach (int i in gradesStudent2)
                                 {
                                     Console.WriteLine(i);
                                 }
-                                
+
                                 Console.WriteLine("Grades of student {0}: ", students[2]);
                                 foreach (int i in gradesStudent3)
                                 {
@@ -101,28 +102,28 @@ namespace HomeWork07
                                     sum += grades[i];
                                     average = (float)sum / n;
                                 }
-                                Console.WriteLine("Average grade of student {0} is {1}", students[0], average);
-                                
+                                Console.WriteLine("Average grade of student {0} is {1}", students[0], Math.Round(average, 2));
+
                                 for (int i = 0; i < gradesStudent2.Length; i++)
                                 {
                                     sum += grades[i];
                                     average = (float)sum / n;
                                 }
-                                Console.WriteLine("Average grade of student {0} is {1}", students[1], average);
-                                
+                                Console.WriteLine("Average grade of student {0} is {1}", students[1], Math.Round(average, 2));
+
                                 for (int i = 0; i < gradesStudent3.Length; i++)
                                 {
                                     sum += grades[i];
                                     average = (float)sum / n;
                                 }
-                                Console.WriteLine("Average grade of student {0} is {1}", students[2], average);
+                                Console.WriteLine("Average grade of student {0} is {1}", students[2], Math.Round(average, 2));
                                 break;
 
                             case "q":
                                 return;
 
                             default:
-                                Console.WriteLine("Command is not valid. Please enter command s, c, d or q (exit)");
+                                Console.WriteLine("Command is not valid. Please enter command s, d, c or q (exit)");
                                 break;
                         }
                     }
@@ -135,7 +136,7 @@ namespace HomeWork07
                         int[] gradesStudent1 = new int[g] { 4, 5, 6, 6, 7, 8, 9, 10 };
                         int[] gradesStudent2 = new int[g] { 5, 6, 6, 7, 8, 9, 10, 10 };
                         int[] gradesStudent3 = new int[g] { 9, 8, 8, 9, 10, 7, 9, 10 };
-                        Console.WriteLine("Please enter command: s - display all students, d - display grades of each student, c - calculte averge grade of each student, q - quit");
+                        Console.WriteLine("Please enter command: s - display all students, d - display grades of each student, c - calculate averge grade of each student, q - quit");
                         string command2 = Console.ReadLine();
 
                         switch (command2)
@@ -154,13 +155,13 @@ namespace HomeWork07
                                 {
                                     Console.WriteLine(i);
                                 }
-                                
+
                                 Console.WriteLine("Grades of student {0}: ", students[1]);
                                 foreach (int i in gradesStudent2)
                                 {
                                     Console.WriteLine(i);
                                 }
-                                
+
                                 Console.WriteLine("Grades of student {0}: ", students[2]);
                                 foreach (int i in gradesStudent3)
                                 {
@@ -176,21 +177,21 @@ namespace HomeWork07
                                     sum += grades[i];
                                     average = (float)sum / n;
                                 }
-                                Console.WriteLine("Average grade of student {0} is {1}", students[0], average);
-                                
+                                Console.WriteLine("Average grade of student {0} is {1}", students[0], Math.Round(average, 2));
+
                                 for (int i = 0; i < gradesStudent2.Length; i++)
                                 {
                                     sum += grades[i];
                                     average = (float)sum / n;
                                 }
-                                Console.WriteLine("Average grade of student {0} is {1}", students[1], average);
-                                
+                                Console.WriteLine("Average grade of student {0} is {1}", students[1], Math.Round(average, 2));
+
                                 for (int i = 0; i < gradesStudent3.Length; i++)
                                 {
                                     sum += grades[i];
                                     average = (float)sum / n;
                                 }
-                                Console.WriteLine("Average grade of student {0} is {1}", students[2], average);
+                                Console.WriteLine("Average grade of student {0} is {1}", students[2], Math.Round(average, 2));
                                 break;
 
                             case "q":
