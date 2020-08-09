@@ -58,9 +58,6 @@ namespace HomeWork09
             card.cards.Add(new Card() { Id = card2Id, Summary = card2Summary, Status = card2Status, Assignee = user.users[1].LastandFirstName, DueDate = card2DueDt });
             card.cards.Add(new Card() { Id = card3Id, Summary = card3Summary, Status = card3Status, Assignee = user.users[3].LastandFirstName, DueDate = card3DueDt });
 
-            //Cards completion dates verification
-         
-
             //cards operations
             switch (menu.boardNumber)
             {
@@ -100,22 +97,24 @@ namespace HomeWork09
 
                             case "r1":
                                 //report1
+                                Console.WriteLine("The following cards are expired:");
                                 foreach (Card r1 in card.cards)
                                 {
                                     if (r1.DueDate <= new DateTime(2020, 07, 01))
                                     {
-                                        Console.WriteLine("The following cards are expired: id: {0}, assignee: {1}, due date: {2}", r1.Id, r1.Assignee, r1.DueDate);
+                                        Console.WriteLine("id: {0}, assignee: {1}, due date: {2}", r1.Id, r1.Assignee, r1.DueDate);
                                     }
                                 }
                                 break;
 
                             case "r2":
                                 //report2
+                                Console.WriteLine("Cards for all users:");
                                 foreach (Card r2 in card.cards)
                                 {
                                     if (user.users.Any(c => c.LastandFirstName == r2.Assignee))
                                     {
-                                        Console.WriteLine("Cards for all users: id: {0}, assignee: {1}", r2.Id, r2.Assignee);
+                                        Console.WriteLine("id: {0}, assignee: {1}", r2.Id, r2.Assignee);
                                     }
                                 }
                                 break;
@@ -209,22 +208,24 @@ namespace HomeWork09
 
                             case "r1":
                                 //report1
+                                Console.WriteLine("The following cards are expired:");
                                 foreach (Card r1 in card.cards)
                                 {
                                     if (r1.DueDate <= new DateTime(2020, 08, 01))
                                     {
-                                        Console.WriteLine("The following cards are expired: id: {0}, assignee: {1}, due date: {2}", r1.Id, r1.Assignee, r1.DueDate);
+                                        Console.WriteLine("id: {0}, assignee: {1}, due date: {2}", r1.Id, r1.Assignee, r1.DueDate);
                                     }
                                 }
                                 break;
 
                             case "r2":
                                 //report2
+                                Console.WriteLine("Cards for all users:");
                                 foreach (Card r2 in card.cards)
                                 {
                                     if (user.users.Any(c => c.LastandFirstName == r2.Assignee))
                                     {
-                                        Console.WriteLine("Cards for all users: id: {0}, assignee: {1}", r2.Id, r2.Assignee);
+                                        Console.WriteLine("id: {0}, assignee: {1}", r2.Id, r2.Assignee);
                                     }
                                 }
                                 break;
