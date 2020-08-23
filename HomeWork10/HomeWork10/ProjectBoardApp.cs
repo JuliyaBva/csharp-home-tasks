@@ -14,6 +14,10 @@ namespace HomeWork10
             board.Status = "Active";
             Console.WriteLine("Board name: {0}, board status: {1}", board.Name, board.Status);
 
+            //Override example
+            BoardAddInfo b = new BoardAddInfo("general", "100", "approved");
+            Console.WriteLine($"\nAdditional information about board: {b.type} - {b.Info()}");
+
             //Inheritance example1
             CardAddField cardAddField = new CardAddField("Task", "Major");
             cardAddField.DisplayDefaultCardFields();
@@ -41,10 +45,6 @@ namespace HomeWork10
             person.persons.Add(new Person() { FirstAndLastName = person3 });
             person.persons.Add(new Person() { FirstAndLastName = person4 });
             person.persons.Add(new Person() { FirstAndLastName = person5 });
-
-            //Override example
-            BoardAddInfo b = new BoardAddInfo("general", "100", "approved" );
-            Console.WriteLine($"\nAdditional information about board: {b.type} - {b.Info()}");
 
             //create cards
             Card card = new Card();
